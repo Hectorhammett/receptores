@@ -84,6 +84,8 @@ body{
 
 .logo-holder{
   padding:15px;
+  border-bottom: 1px solid #e0e0e0;
+  height: 70px;
 }
 
 .side-menu .nav{
@@ -183,4 +185,12 @@ fieldset{
   position: absolute;
   bottom: 0;
   text-align: center;
+}
+
+.radio-inline{
+  margin-top: 10px!important;
+}
+
+.table-vertical-middle tr td{
+  vertical-align: middle!important;
 }

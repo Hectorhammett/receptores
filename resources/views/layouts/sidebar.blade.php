@@ -1,6 +1,6 @@
 <div id="sidebar-app" class="sidebar sidebar-colapsed">
-  <div class="logo-holder">
-    <img src="{{URL::asset('images/logo.png')}}" class="img-responsive"/>
+  <div class="logo-holder text-center">
+    <h4>SISTEMA DE RECEPCIÓN</h4>
   </div>
   <div class="side-menu">
     <ul class="nav nav-pills nav-stacked" id="scrapers-menu">

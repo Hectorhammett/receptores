@@ -14,7 +14,7 @@
 	<meta name="theme-color" content="#FF9800">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
-	<title>MI Technologies Inc.| @yield('title')</title>
+	<title>Sistema de Recepción de residuos | @yield('title')</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
@@ -52,8 +52,8 @@
 											<span class="icon-bar"></span>
 											<span class="icon-bar"></span>
 							</button>
-							<a class="navbar-brand hidden-xs" href="{{ url(Request::path()) }}" id="brand">Scrapers Dashboard / <small> @yield('title') </small></a>
-							<a class="navbar-brand visible-xs" href="{{ url(Request::path()) }}" id="brand">Scrapers Dashboard <br/> <small> @yield('title') </small></a>
+							<a class="navbar-brand hidden-xs" href="{{ url(Request::path()) }}" id="brand"> @yield('title') / <small> @yield('subtitle') </small></a>
+							<a class="navbar-brand visible-xs" href="{{ url(Request::path()) }}" id="brand"> @yield('title') / <small> @yield('subtitle') </small></a>
 						</div>
 				    	<div class="collapse navbar-collapse visible-xs" id="bs-example-navbar-collapse-1">
 				    		<ul class="nav navbar-nav navbar-right">
