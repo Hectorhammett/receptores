@@ -90,6 +90,9 @@
 	<!-- Main JS -->
 	<script src="{{ URL::asset('js/main.js') }}" type="text/javascript"></script>
 
+	<!-- Vue JS -->
+	<script src="{{ URL::asset('assets/vue/vue.js') }}" type="text/javascript"></script>
+
 	<!-- Customs JS -->
 
 

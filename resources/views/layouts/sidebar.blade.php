@@ -9,5 +9,9 @@
       <li role="presentation"><a href="{{ url("#") }}">Separación</a></li>
       <li role="presentation"><a href="{{ url("#") }}">Almacén</a></li>
     </ul>
+    <ul class="nav nav-pills nav-stacked" id="scrapers-menu">
+      <li class="nav-header">Administrador</li>
+      <li role="presentation"><a href="{{ url("#") }}">Residuos</a></li>
+    </ul>
   </div>
 </div>
