@@ -1,0 +1,42 @@
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.sidebar{
+  position:absolute;
+  width:250px;
+  background-color: #fff;
+  top:0;
+  bottom:0;
+  border-right: 1px solid rgba(0,0,0,0.14);
+  transition:left 0.25s ease;
+}
+
+.main{
+  position:absolute;
+  right:0;
+  background-color: #fff;
+  top:0;
+  bottom:0;
+  left:250px;
+  transition:left 0.25s ease;
+}
+
+.sidebar-collapsed{
+  left:0;
+}
+@media(max-width:991px){
+  .sidebar-collapsed{
+    left:-250px;
+  }
+  .main{
+    left:0px;
+  }
+}
+
+.logo-holder{
+  padding: 10px;
+}
