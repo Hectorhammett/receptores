@@ -15,4 +15,8 @@ Route::get('/', function () {
     return view('recepcion');
 });
 
+Route::get('/recepcion',function(){
+    return view("recepcion");
+});
+
 Route::get('/residuos','ResiduesController@index');
