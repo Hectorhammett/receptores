@@ -7,14 +7,7 @@
   //functions
   residuos.init = function init(){
     initVue();
-  }
-
-  residuos.addToList = function(element){
-    list.push(element);
-  }
-
-  residuos.getList = function(){
-    console.log(list);
+    getResidues();
   }
 
   function initVue(){
@@ -23,18 +16,25 @@
         data: {
           name: '',
           unit: 'kilogramos',
-          residues: list,
           submitting: false,
           loading: false,
+          residues: list
         },
         methods: {
           addResidue: function () {
             var name = this.name.trim()
             var unit = this.unit;
+            var that = this;
             if (name) {
-              this.residues.push({ name: name, unit: unit })
-              this.name = ''
-              this.unit = "kilogramos"
+              $.post('store-residue',{name: name, unit: unit},function(data){
+                alert(data);
+                that.name = "";
+                that.unit = ""
+                getResidues();
+              })
+              .fail(function(response){
+                alert(response.responseText);
+              })
             }
           },
           removeTodo: function (index) {
@@ -50,8 +50,8 @@
     }
 
     function getResidues(){
-      $.get('residues',function(){
-
+      $.get('get-all-residues',function(response){
+        vue.residues = response;
       })
     }
 }( window.residuos = window.residuos || {}, jQuery ));

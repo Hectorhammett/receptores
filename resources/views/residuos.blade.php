@@ -38,9 +38,9 @@
                 </thead>
                 <tbody>
                   <tr v-for="residue in residues">
-                    <td>@{{ residue.name }}</td>
+                    <td>@{{ residue.nombre }}</td>
                     <td> 
-                      @{{ residue.unit }}
+                      @{{ residue.unidad }}
                     </td>
                     <td> <button class="btn btn-danger btn-raised">Deshabilitar</button><td>
                   </tr>
@@ -48,6 +48,7 @@
               </table>
               </div>
           </div>
+        </div>
         </div>
 @endsection
 

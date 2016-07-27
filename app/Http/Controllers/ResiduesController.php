@@ -10,7 +10,10 @@ use Validator;
 class ResiduesController extends Controller
 {
     public function index(){
-        return view("residuos");
+        $residues = self::getAllResidueData();
+        return view("residuos",[
+            'residuos' => $residues
+        ]);
     }
 
     public function storeResidueData( Request $postData ){
