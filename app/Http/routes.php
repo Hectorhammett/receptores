@@ -20,3 +20,5 @@ Route::get('/recepcion',function(){
 });
 
 Route::get('/residuos','ResiduesController@index');
+Route::get( '/store-residue', 'ResiduesController@storeResidueData' );
+Route::get('/get-all-residues', 'ResiduesController@getAllResidueData' );
